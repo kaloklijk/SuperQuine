@@ -6,6 +6,8 @@ This is a quine program that will reproduce itself in target's startup folders,
 
 so that when targets' computer restart, it will automatically run this program and keep reproducing
 
+this program is only useful for windows 10 or below, enjoy!
+
 ## Usage:
 
 ``` diff
