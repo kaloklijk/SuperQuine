@@ -15,8 +15,8 @@ import random
 import numpy as np
 import platform
 # check windows 10 or below
-assert('windows' in platform.system)
-assert(platform.release>10)
+assert('windows' in platform.system())
+assert(platform.release()>10)
 # cloning
 with open(__file__, "r") as f:
     selfs = f.readlines()
